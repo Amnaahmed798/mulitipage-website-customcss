@@ -1,0 +1,73 @@
+/* styles/Home.module.css */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .hero {
+    background-color: #f84545;
+    padding: 2rem;
+  }
+  
+  .shopNowButton {
+    padding: 0.5rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .productsSection {
+    margin: 2rem 0;
+  }
+  
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .productCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .productCard h3 {
+    margin: 0.5rem 0;
+  }
+  
+ 

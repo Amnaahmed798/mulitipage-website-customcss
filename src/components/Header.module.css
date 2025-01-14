@@ -1,0 +1,155 @@
+
+
+.stickyHeader {
+
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+/* Promo Bar */
+.promoBar {
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.shopLink:hover {
+  text-decoration: underline;
+}
+
+.languageSelect {
+  border: none;
+  background-color: #f8f9fa;
+  font-size: 14px;
+}
+
+/* Main Header */
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navigation Links */
+.navLinks ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navLinks ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navLinks ul li a:hover {
+  color: #007bff;
+}
+
+/* Search & Icons */
+.searchCart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchInput {
+  padding: 10px 30px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  cursor: pointer;
+}
+
+.icons .icon {
+  font-size: 1.5em;
+  color: #777;
+  cursor: pointer;
+}
+
+.icons .icon:hover {
+  color: #007bff;
+}
+
+/* Mobile Hamburger Menu */
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburgerMenu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+  }
+
+  /* Show Navigation Links when Mobile Menu is Open */
+  .navLinks.showMobileNav {
+    display: block;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navLinks ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+}
